@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice second</title>
+    <style>
+
+* {
+  margin: 0;
+}
+
+.body {
+  display: grid;
+  grid-template-rows: 1fr 5fr 2fr;
+  text-align: center;
+}
+
+.header {
+  padding: 20px;
+  background-color: #e9c7ff;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+}
+
+.section {
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffe2b9;
+}
+
+.title {
+grid-column: 1/3;
+}
+
+.a-first {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+.a-second {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+
+.a-third {
+  grid-row: 4/5;
+  grid-column: 1/3;
+}
+
+.article {
+        display: grid;
+        text-align: center;
+        background-color: #ffcd87;
+      }
+
+.aside {
+  padding: 20px;
+  background-color: #9dff87;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: #e9c7ff;
+}
+
+.div-footer {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+background-color: #ffffff;
+      }
+
+    </style>
+  </head>
+  <body class="body">
+    <header class="header">
+        <h1>Турагенство "Даша-путешественница"</h1>
+    </header>
+    <main class="main">
+      <section class="section">
+        <h2 class="title">Спецпредложения</h2>
+        <article class="article a-first">
+            <h3>Отдых на Мальдивах</h3>
+            <p>От 3000 &#36;</p>
+            <button>Подробнее</button>
+        </article>
+          <article class="article a-second">
+            <h3>Отдых на Сейшелах</h3>
+            <p>От 4000 &#36;</p>
+            <button>Подробнее</button>
+        </article>
+        <article class="article a-third">
+          <h3>Тур по Европе</h3>
+          <p>От 1000 &#36;</p>
+          <button>Подробнее</button>
+        </article>
+      </section>
+      <aside class="aside">
+        <h2>Выбрать тур</h2>
+        <form>
+          <div>
+            <label for="month">Сезон тура:</label>
+            <select id="month" name="month" required>
+              <option value="">Выберите</option>
+              <option value="winter">Зима</option>
+              <option value="spring">Весна</option>
+              <option value="summer">Лето</option>
+              <option value="autumn">Осень</option>
+            </select>
+          </div>
+          <div>
+            <label for="type">Вид курорта:</label>
+            <select id="type" name="type" required>
+              <option value="">Выберите</option>
+              <option value="beach">Пляжный отдых</option>
+              <option value="excursion">Экскурсия</option>
+              <option value="wedding">Свадебное путешествие</option>
+              <option value="shopping">Шоп-туры</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+          <div>
+            ФИО и контакты:
+            <textarea rows="5" cols="20"></textarea>
+          </div>
+          <button>Хочу тур!</button>
+        </form>
+      </aside>
+    </main>
+    <footer class="footer">
+      <div class="div-footer">
+        <h3>Адрес нашего офиса</h3>
+        <p>г. Минск, ул. Васи Пупкина, д. 4</p>
+      </div>
+      <div class="div-footer">
+        <h3>Наш телефон</h3>
+        <a href="tel:+375331234567">+375 (33) 123-45-67</a>
+      </div>
+      <div class="div-footer">
+        <h3>Наш e-mail</h3>
+        <a href="mailto:dashaputeshestvennica.com">dashaputeshestvennica.com</a>
+      </div>
+      <div class="div-footer">
+        <h3>Наши соц. сети</h3>
+        <a href="#">Вайбер</a>
+        <a href="#">Вконтакте</a>
+        <a href="#">Инстаграм</a>
+        <a href="#">Ютуб</a>
+      </div>
+    </footer>
+  </body>
+</html>
